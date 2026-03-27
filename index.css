@@ -1,0 +1,226 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --neon-pink: #ff00de;
+  --neon-blue: #00d8ff;
+  --neon-green: #00ff42;
+  --neon-yellow: #f3ff00;
+  --glass-bg: rgba(0, 0, 0, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-image: url('media/Screenshot 2026-03-20 at 10.17.23\ AM.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 400px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.app-container {
+  background: radial-gradient(circle at top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100%);
+}
+
+/* Glassmorphism Utility */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Header & Nav */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.search-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+.tab-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.05);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
+}
+
+.tab-link:hover {
+  background: var(--neon-pink);
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('media/9AAAC22C-EB04-4D86-B30E-33354BE9E653.png') center/cover no-repeat;
+  margin-bottom: 4rem;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Enhanced Neon Sign */
+.neon-sign-premium {
+  font-size: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -2px;
+  animation: neon-glow 2s infinite alternate;
+  color: #fff;
+}
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue), 0 0 70px var(--neon-blue);
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 35px var(--neon-pink);
+  }
+}
+
+/* Carousel */
+.carousel-track img {
+  height: 80px;
+  width: auto;
+  filter: grayscale(1) brightness(2) contrast(1.2);
+  transition: all 0.5s ease;
+  margin: 0 20px;
+}
+
+.carousel-track img:hover {
+  filter: grayscale(0) brightness(1) contrast(1);
+  transform: scale(1.1);
+}
+
+/* Product Cards */
+.signatures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+.signature-card-premium {
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card-img-wrapper {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.signature-card-premium:hover {
+  transform: translateY(-15px);
+  border-color: var(--neon-blue);
+  box-shadow: 0 15px 40px rgba(0, 216, 255, 0.3);
+}
+
+.signature-card-premium:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  color: var(--neon-yellow);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About Section Enhancements */
+.about-section-premium {
+  padding: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section-premium h1 {
+  background: linear-gradient(45deg, var(--neon-green), var(--neon-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+/* Calendar Widget */
+.calendar-premium {
+  border: 1px solid var(--neon-yellow);
+  box-shadow: 0 0 20px rgba(243, 255, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .neon-sign-premium { font-size: 3.5rem; }
+  .about-section-premium { padding: 2rem; }
+  .hero-section { height: 60vh; }
+}
