@@ -1,282 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mojo Cookie Dough & Creamery | Nashville's Best Ice Cream Truck</title>
-  <meta name="description" content="Mojo Cookie Dough & Creamery — Nashville's favorite ice cream truck for corporate events, school celebrations, weddings, and more.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojo Cookie Dough & Creamery | Nashville's Favorite Ice Cream Truck</title>
+    <meta name="description" content="Mojo Cookie Dough & Creamery delivers a high-energy dessert experience across Nashville. Book the best ice cream truck for corporate events, weddings, and parties.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="app-container">
 
-    <!-- Header & Nav -->
-    <header class="header">
-      <nav class="nav-container">
-        <a href="#home" class="nav-logo-link">
-          <img src="media/0AB3B583-FF64-4949-97EB-1E12CEBAEFA1.png" alt="Mojo Logo" class="nav-logo-img">
-        </a>
-        <div class="search-tabs" id="nav-links">
-          <a href="#home"       class="tab-link">Home</a>
-          <a href="#about"      class="tab-link">About</a>
-          <a href="#signatures" class="tab-link">Signatures</a>
-          <a href="#clients"    class="tab-link">Clients</a>
-          <a href="#book"       class="tab-link tab-link-cta">Book Now</a>
+    <header>
+        <div class="logo">
+            <img src="public/media/logo.png" alt="Mojo Logo" height="75">
         </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+        
+        <div class="search-container">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="neon-cyan"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Search Nashville's Favorites...">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#signatures">Signatures</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+            </ul>
+            <div class="menu-icon" id="mobile-menu-btn">
+                <div class="neon-pink" style="font-size: 2rem; cursor: pointer;">☰</div>
+            </div>
+        </nav>
     </header>
 
     <main>
-
-      <!-- Hero Section -->
-      <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <img src="media/0AB3B583-FF64-4949-97EB-1E12CEBAEFA1.png" alt="Mojo Logo" class="hero-logo">
-          <img src="media/sweet_vibes_clean.png" alt="Sweet Vibes" class="hero-title-img">
-          <p class="hero-tagline">The Ultimate Cookie &amp; Ice Cream Experience</p>
-          <a href="#book" class="btn-primary">Book the Truck</a>
-        </div>
-      </section>
-
-      <div class="main-content">
-
-        <!-- About Section -->
-        <section id="about" class="about-section glass-panel reveal">
-          <h2 class="section-title gradient-text">Trusted by Nashville Favorites</h2>
-          <div class="about-body">
-            <div class="about-text">
-              <p>For 10 years, <strong>Mojo Cookie Dough &amp; Creamery</strong> has helped make events across Nashville even sweeter. Known as one of Nashville's Best Ice Cream Trucks, Mojo delivers a high-energy dessert experience that guests remember long after the event ends.</p>
-              <p>From corporate gatherings and school celebrations to university events, medical teams, hospitality groups, and luxury brands, Mojo has earned a reputation as one of Nashville's Most Popular Ice Cream Trucks—bringing premium treats and unforgettable service to every occasion.</p>
-              <p>We're proud to serve organizations throughout Nashville and the surrounding area with premium ice cream, freshly baked cookies, signature floats, and made-to-order treats from our vibrant truck.</p>
-              <p class="perfect-for-label">Perfect for:</p>
-              <div class="tag-list">
-                <span class="tag">Corporate Events</span>
-                <span class="tag">Employee Appreciation</span>
-                <span class="tag">School Celebrations</span>
-                <span class="tag">University Events</span>
-                <span class="tag">Community Festivals</span>
-                <span class="tag">Private Parties</span>
-                <span class="tag">Weddings</span>
-              </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-logo-container">
+                <img src="public/media/hero-heading2.png" alt="Mojo Cookie Dough & Creamery" style="max-width: 900px; width: 95%;">
             </div>
-            <div class="about-image-wrap">
-              <img src="media/unnamed.jpg" alt="Mojo Team" class="about-img">
-            </div>
-          </div>
+            <button class="btn-book">
+                BOOK MOJO NOW
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </button>
         </section>
 
-        <!-- Client Logo Carousel -->
-        <section id="clients" class="clients-section reveal">
-          <h2 class="section-title blue-text">Trusted By</h2>
-          <div class="carousel-container glass-panel">
-            <div class="carousel-track" id="logo-carousel">
-              <img src="logos/amazon.png"                                                                   alt="Amazon">
-              <img src="logos/AT&T_logo_2016.svg"                                                          alt="AT&T">
-              <img src="logos/HiltonHotelsLogo.svg.png"                                                    alt="Hilton">
-              <img src="logos/Mercedes-Benz-Logo.png"                                                      alt="Mercedes-Benz">
-              <img src="logos/Porsche-Logo.png"                                                             alt="Porsche">
-              <img src="logos/Vanderbilt_University_logo.png"                                               alt="Vanderbilt University">
-              <img src="logos/whole-foods-logo10_5ec1a0b1-5056-b3a8-49b0397baf41fcfb.jpg"                  alt="Whole Foods">
-              <img src="logos/bmw-transparent-bmw-free-free-png.png"                                       alt="BMW">
-              <img src="logos/Lipscomb_Logo.webp"                                                          alt="Lipscomb University">
-              <img src="logos/Harding.png"                                                                 alt="Harding University">
+        <!-- Logo Carousel -->
+        <section class="carousel-wrapper">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 0.8rem; color: #666; letter-spacing: 5px;">TRUSTED BY NASHVILLE FAVORITES</h2>
+            <div class="logo-carousel" id="logo-scroll">
+                <img src="public/logos/140-1406394_sprint-sprint-logo.png.jpeg" alt="Sprint">
+                <img src="public/logos/amazon.png" alt="Amazon">
+                <img src="public/logos/AT&T_logo_2016.svg" alt="AT&T">
+                <img src="public/logos/BA_stack_logo-1024x598.png" alt="BA">
+                <img src="public/logos/BMI_Logo_blue_spark.svg" alt="BMI">
+                <img src="public/logos/bmw-transparent-bmw-free-free-png.png" alt="BMW">
+                <img src="public/logos/Harding.png" alt="Harding">
+                <img src="public/logos/HiltonHotelsLogo.svg.png" alt="Hilton">
+                <img src="public/logos/Lipscomb_Logo.webp" alt="Lipscomb">
+                <img src="public/logos/Mercedes-Benz-Logo.png" alt="Mercedes">
+                <img src="public/logos/Porsche-Logo.png" alt="Porsche">
+                <img src="public/logos/THD_logo.jpg" alt="Home Depot">
+                <img src="public/logos/Vanderbilt_University_logo.png" alt="Vanderbilt">
+                <img src="public/logos/whole-foods-logo10_5ec1a0b1-5056-b3a8-49b0397baf41fcfb.jpg" alt="Whole Foods">
+                <!-- Loop -->
+                <img src="public/logos/140-1406394_sprint-sprint-logo.png.jpeg" alt="Sprint">
+                <img src="public/logos/amazon.png" alt="Amazon">
+                <img src="public/logos/AT&T_logo_2016.svg" alt="AT&T">
+                <img src="public/logos/BA_stack_logo-1024x598.png" alt="BA">
+                <img src="public/logos/BMI_Logo_blue_spark.svg" alt="BMI">
+                <img src="public/logos/bmw-transparent-bmw-free-free-png.png" alt="BMW">
+                <img src="public/logos/Harding.png" alt="Harding">
+                <img src="public/logos/HiltonHotelsLogo.svg.png" alt="Hilton">
+                <img src="public/logos/Lipscomb_Logo.webp" alt="Lipscomb">
+                <img src="public/logos/Mercedes-Benz-Logo.png" alt="Mercedes">
+                <img src="public/logos/Porsche-Logo.png" alt="Porsche">
+                <img src="public/logos/THD_logo.jpg" alt="Home Depot">
+                <img src="public/logos/Vanderbilt_University_logo.png" alt="Vanderbilt">
+                <img src="public/logos/whole-foods-logo10_5ec1a0b1-5056-b3a8-49b0397baf41fcfb.jpg" alt="Whole Foods">
             </div>
-          </div>
         </section>
 
-        <!-- Mojo Signatures -->
-        <section id="signatures" class="signatures-section reveal">
-          <h2 class="section-title pink-text">Mojo Signatures</h2>
-          <div class="signatures-grid">
+        <!-- About Us Section -->
+        <section id="about" style="padding: 100px 10%; background: #000; border-top: 1px solid #222;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="neon-pink" style="font-size: 2.5rem; margin-bottom: 2rem;">Trusted by Nashville Favorites</h2>
+                <div class="glass" style="padding: 3rem; text-align: left; border: 1px solid var(--secondary);">
+                    <p style="margin-bottom: 1.5rem; font-size: 1.2rem;">For 10 years, <strong class="neon-cyan">Mojo Cookie Dough & Creamery</strong> has helped make events across Nashville even sweeter. Known as one of Nashville’s Best Ice Cream Trucks, Mojo delivers a high-energy dessert experience that guests remember long after the event ends.</p>
+                    <p style="margin-bottom: 1.5rem;">From corporate gatherings and school celebrations to university events, medical teams, hospitality groups, and luxury brands, Mojo has earned a reputation as one of <strong class="neon-green">Nashville’s Most Popular Ice Cream Trucks</strong>—bringing premium treats and unforgettable service to every occasion.</p>
+                    <p style="margin-bottom: 2rem;">We’re proud to serve organizations throughout Nashville and the surrounding area with premium ice cream, freshly baked cookies, signature floats, and made-to-order treats from our vibrant truck. It’s no surprise we’ve become one of Nashville’s Favorite Ice Cream Trucks for events of all sizes.</p>
+                    
+                    <h3 class="neon-yellow" style="margin-bottom: 1rem;">Perfect for:</h3>
+                    <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 2rem;">
+                        <li>• Corporate Events</li>
+                        <li>• Employee Appreciation</li>
+                        <li>• School Celebrations</li>
+                        <li>• University Events</li>
+                        <li>• Community Festivals</li>
+                        <li>• Private Parties</li>
+                        <li>• Weddings</li>
+                    </ul>
 
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/1F7D69E6-49B1-4A4F-A894-73A36273DB69.png" alt="Cookies and Cream Sweet Dreams">
-              </div>
-              <div class="card-body">
-                <h3>Cookies &amp; Cream Sweet Dreams</h3>
-                <p>Cookies and cream ice cream, cookies and cream cookies, crushed Oreos, chocolate chips, white chips, chocolate sauce, chocolate sprinkles.</p>
-              </div>
+                    <h3 class="neon-cyan">Bring the Mojo Experience to Your Event</h3>
+                    <p style="margin-top: 1rem;">From small team gatherings to large-scale celebrations, Mojo delivers an unforgettable dessert experience on wheels. If you’re looking for one of Nashville’s Best Ice Cream Trucks to elevate your event, you’ve found it.</p>
+                </div>
             </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/3A2065F2-C48F-4899-98E9-556EA6864C5E.png" alt="Peanut Butter Ore-Oh Baby!">
-              </div>
-              <div class="card-body">
-                <h3>Peanut Butter Ore-Oh Baby!</h3>
-                <p>Vanilla bean ice cream, double dark cookies, fresh peanut butter, crushed Oreos, chocolate sauce, chocolate sprinkles.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/B3461BCA-BC64-4552-B582-C1CCEC9BAC78.png" alt="The Salted Caramel">
-              </div>
-              <div class="card-body">
-                <h3>The Salted Caramel</h3>
-                <p>Salted caramel ice cream, salted caramel cookies, caramel sauce. A perfect balance of salty and sweet.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/DD6A7921-8993-408D-A330-83181DDFA9EB.png" alt="The Chocolate Explosion">
-              </div>
-              <div class="card-body">
-                <h3>The Chocolate Explosion</h3>
-                <p>Chocolate ice cream, double dark cookies, chocolate chips, chocolate sauce, chocolate sprinkles. For the ultimate chocoholic.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/E06815EF-C4E4-4108-AE79-3571FF8D4A58.png" alt="Mojo Cookie Dough Surprise">
-              </div>
-              <div class="card-body">
-                <h3>Mojo Cookie Dough Surprise</h3>
-                <p>Our famous cookie dough ice cream with your choice of cookies and toppings! The true Mojo experience.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/FD3711D9-DC23-4993-B08B-1DE1362B7766.png" alt="Old School Mojo">
-              </div>
-              <div class="card-body">
-                <h3>Old School Mojo</h3>
-                <p>Chewy Chocolate Chip Cookies and Madagascar Vanilla Bean Ice Cream. A classic favorite with a premium twist.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/05241B46-4E4F-49EA-B602-407DFAA5D41D.png" alt="Mojo Double Mint Chocolate">
-              </div>
-              <div class="card-body">
-                <h3>Mojo Double Mint Chocolate</h3>
-                <p>Double Chocolate Chunk Cookies and Mojo Mint Chocolate Chip Ice Cream. Refreshing and decadent.</p>
-              </div>
-            </div>
-
-            <div class="signature-card glass-panel">
-              <div class="card-img-wrapper">
-                <img src="media/C1171E77-9068-4F5C-871F-B5B3E41C598D.png" alt="Mad Mocha Mojo">
-              </div>
-              <div class="card-body">
-                <h3>Mad Mocha Mojo</h3>
-                <p>Coffee mocha ice cream, double dark cookies, chocolate sauce, chocolate chips, chocolate sprinkles. Bold and rich.</p>
-              </div>
-            </div>
-
-          </div>
         </section>
 
-        <!-- Event Calendar -->
-        <section id="calendar" class="calendar-section reveal">
-          <h2 class="section-title yellow-text">Event Calendar</h2>
-          <div class="calendar-widget glass-panel" id="calendar-widget"></div>
-          <p class="calendar-note">* Locations updated weekly</p>
+        <!-- MOJO Signatures -->
+        <section id="signatures" style="padding: 100px 5%; background: var(--bg-dark);">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 4rem;">MOJO <span class="neon-pink">Signatures</span></h2>
+            <div class="signatures-grid">
+                <!-- Monster Mash -->
+                <div class="sig-card glass neon-border-pink">
+                    <div style="height: 250px; background: rgba(255,255,255,0.02); border-radius: 15px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="public/media/Monster-Mash.png" alt="Monster Mash" style="width: 100%; height: 100%; object-fit: cover; filter: drop-shadow(0 0 20px var(--primary));">
+                    </div>
+                    <h3 class="neon-pink">The Monster Mash</h3>
+                    <p>A legend in Nashville. Our oversized, triple-chocolate chip cookie topped with sea salt and a scoop of velvety vanilla bean.</p>
+                </div>
+                <!-- Mojo Dough Bowl -->
+                <div class="sig-card glass neon-border-cyan">
+                    <div style="height: 250px; background: rgba(255,255,255,0.02); border-radius: 15px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="public/media/Mojo-Dough.png" alt="Dough Bowl" style="width: 100%; height: 100%; object-fit: cover; filter: drop-shadow(0 0 20px var(--secondary));">
+                    </div>
+                    <h3 class="neon-cyan">Mojo Dough Bowl</h3>
+                    <p>Two generous scoops of our signature edible cookie dough topped with a scoop of ice cream and warm fudge drizzle.</p>
+                </div>
+                <!-- Classic Root Beer -->
+                <div class="sig-card glass" style="border: 2px solid var(--accent-green); box-shadow: 0 0 15px var(--accent-green);">
+                    <div style="height: 250px; background: rgba(255,255,255,0.02); border-radius: 15px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="public/media/Classis-root.png" alt="Root Beer Float" style="width: 100%; height: 100%; object-fit: cover; filter: drop-shadow(0 0 20px var(--accent-green));">
+                    </div>
+                    <h3 class="neon-green">Classic Root Beer</h3>
+                    <p>Ice cold artisan root beer poured over two perfectly round scoops of our creamy vanilla bean ice cream. The ultimate nostalgia.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Book Now -->
-        <section id="book" class="book-section reveal">
-          <div class="book-inner glass-panel">
-            <h2 class="section-title pink-text">Book the Truck</h2>
-            <p class="book-subtitle">Ready to bring Mojo to your event? Fill out the form and we'll get back to you within 24 hours.</p>
-            <form class="booking-form" onsubmit="handleBooking(event)">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        <!-- Calendar Section -->
+        <section id="calendar" style="padding: 100px 5%;">
+            <div class="calendar-widget glass neon-border-cyan">
+                <div class="calendar-header">
+                    <h3 class="neon-cyan">Mojo Event Calendar</h3>
+                    <span>MARCH 2026</span>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+                <div class="calendar-grid">
+                    <div class="day">S</div><div class="day">M</div><div class="day">T</div><div class="day">W</div><div class="day">T</div><div class="day">F</div><div class="day">S</div>
+                    <div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
+                    <div class="day">8</div><div class="day">9</div><div class="day active">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div>
+                    <div class="day">15</div><div class="day active">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day active">20</div><div class="day">21</div>
+                    <div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" placeholder="(615) 000-0000">
-                </div>
-                <div class="form-group">
-                  <label for="event-type">Event Type</label>
-                  <select id="event-type" name="event-type" required>
-                    <option value="" disabled selected>Select an event type</option>
-                    <option>Corporate Event</option>
-                    <option>Employee Appreciation</option>
-                    <option>School / University</option>
-                    <option>Wedding</option>
-                    <option>Private Party</option>
-                    <option>Festival / Community</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="event-date">Event Date</label>
-                  <input type="date" id="event-date" name="event-date" required>
-                </div>
-                <div class="form-group">
-                  <label for="guests">Estimated Guests</label>
-                  <input type="number" id="guests" name="guests" placeholder="e.g. 200" min="1">
-                </div>
-              </div>
-              <div class="form-group form-full">
-                <label for="message">Additional Details</label>
-                <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, location, and any special requests…"></textarea>
-              </div>
-              <button type="submit" class="btn-primary btn-submit">Send Booking Request</button>
-            </form>
-          </div>
+                <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #777; text-align: center;">Reference only. Calendar is updated weekly.</p>
+            </div>
         </section>
 
-      </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="media/0AB3B583-FF64-4949-97EB-1E12CEBAEFA1.png" alt="Mojo Logo" class="footer-logo">
-          <p>Nashville's favorite ice cream truck — bringing sweet vibes to every event for over 10 years.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#signatures">Signatures</a>
-          <a href="#clients">Our Clients</a>
-          <a href="#book">Book Now</a>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p>Nashville, TN</p>
-          <a href="mailto:info@mojocookiedough.com">info@mojocookiedough.com</a>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">IG</a>
-            <a href="#" class="social-link" aria-label="Facebook">FB</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Mojo Cookie Dough &amp; Creamery. All rights reserved.</p>
-      </div>
+    <footer style="padding: 50px 5%; border-top: 1px solid #222; text-align: center;">
+        <p>&copy; 2026 Mojo Cookie Dough & Creamery. <a href="keywords.html" style="color: #333; text-decoration: none;">Keywords</a></p>
     </footer>
 
-  </div>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        menuBtn.addEventListener('click', () => {
+            alert('Mobile Menu Coming Soon! (Simple Placeholder)');
+        });
 
-  <script src="main.js"></script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
